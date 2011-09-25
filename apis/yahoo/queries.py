@@ -14,8 +14,14 @@ class openFinanceYahoo(openFinance):
     All of the queries here are derived from https://github.com/yql/yql-tables/tree/master/yahoo/finance
     '''
     
+    
     def single_quote(self):
-        pass
+        
+        
+        kwargs = {}
+        kwargs['query_url'] = '1'
+    
+    
     def multiple_quotes(self):
         pass
     def get_options(self):
