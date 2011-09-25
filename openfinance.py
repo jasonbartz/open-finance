@@ -17,7 +17,7 @@ class openFinance(object):
         self.args = args
         self.kwargs = kwargs
         
-    def _query(self):
+    def _query(self, *args, **kwargs):
         '''
         Can accept a number of parameters that define a query, including the desired URL or URL parameters
         '''
