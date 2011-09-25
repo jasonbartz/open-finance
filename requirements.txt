@@ -1,0 +1,2 @@
+httplib2            # Retrieves data from the web
+scrapelib           # Mediates web scraping, caches queries
