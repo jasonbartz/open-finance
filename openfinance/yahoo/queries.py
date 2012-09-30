@@ -58,6 +58,10 @@ class Yahoo(object):
         url_params.update({'q': statement})
         response = requests.get(self.base_url, params=url_params)
 
+        if response.status_code is not requests.codes.ok:
+            raise Exception("Status code is %s.\n%s" % (response.status_code,
+                response.text))
+
         return(response.json)
 
     def show_query(self, query_type):
